@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Header.css'
 import logo from '../../assets/logo.png'
 import bars from '../../assets/bars.png';
+import { Link } from 'react-scroll';
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
   const [menuOpened, setMenuOpend] = useState(false);
@@ -17,11 +18,50 @@ const Header = () => {
           <img src={bars} alt="" style={{ width: '1.5rem', height: '1.5rem' }} />
         </div>
       ) : (<ul className='header-menu'>
-        <li onClick={() => setMenuOpend(false)}>Home</li>
-        <li onClick={() => setMenuOpend(false)}>Programs</li>
-        <li onClick={() => setMenuOpend(false)}>Why us</li>
-        <li onClick={() => setMenuOpend(false)}>Plans</li>
-        <li onClick={() => setMenuOpend(false)}>Testimonials</li>
+        <li >
+        <Link
+        onClick={() => setMenuOpend(false)}
+        to='home'
+        spy={true}
+        smooth={true}
+        >Home</Link>
+        </li>
+
+        <li >
+        <Link
+        onClick={() => setMenuOpend(false)}
+        to='programs'
+        spy={true}
+        smooth={true}
+        >Programs</Link>
+        </li>
+
+        <li >
+        <Link
+        onClick={() => setMenuOpend(false)}
+        to='reasons'
+        spy={true}
+        smooth={true}
+        >Why Us</Link>
+        </li>
+
+        <li >
+        <Link
+        onClick={() => setMenuOpend(false)}
+        to='plans'
+        spy={true}
+        smooth={true}
+        >Plans</Link>
+        </li>
+        
+        <li >
+        <Link
+        onClick={() => setMenuOpend(false)}
+        to='testimonials'
+        spy={true}
+        smooth={true}
+        >Testimonials</Link>
+        </li>
       </ul>)}
 
 

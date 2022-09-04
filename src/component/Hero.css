@@ -215,6 +215,15 @@
         letter-spacing: 1px;
         text-align: center;
     }
+    .hero-buttons
+    {
+        justify-content: center;
+    }
+    .figures
+    {
+        text-align: center;
+        justify-content: space-evenly;
+    }
     .figures>div>span:nth-of-type(1)
     {
         font-size: large;
@@ -259,7 +268,7 @@
     {
         position: relative;
         width: 12rem;
-        left: 7.2rem;
+        left: 11.2rem;
         top: 5rem;
         align-self: center;
     }
@@ -271,8 +280,69 @@
     .hero-img-back
     {
         width: 13rem;
-        left: 2rem;
+        left: 4rem;
         top: 3rem;
+    }
+
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1120px) {
+    .the-best-ad
+    {
+        align-self: center;
+    }
+    .hero
+    {
+        flex-direction: column;
+    }
+    .hero-text
+    {
+        text-align: center;
+    }
+    .hero-text > div:nth-of-type(3)
+    {
+        align-self: center;
+    }
+    .hero-img
+    {
+        width: 16rem;
+        top: 3rem;
+        left: 29rem;
+    }
+    .hero-img-back
+    {
+        width: 14rem;
+        top: 1rem;
+        right: 25rem !important;
+        transform: rotate(-17deg);
+    }
+
+    .right-h
+    {
+        position: relative;
+    }
+    .calories
+    {
+        top: 19rem;
+        left: 4rem;
+    }
+    .figures
+    {
+        justify-content: space-evenly;
+    }
+    .hero-buttons
+    {
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .programs-header
+    {
+        flex-direction: column;
+        gap: 1.5rem !important;
+        margin-top: 25rem;
+        text-align: center;
     }
 }
 

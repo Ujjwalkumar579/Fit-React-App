@@ -109,8 +109,9 @@
     }
     .left-r >:nth-child(2)
     {
-        width: 11rem;
+        width: 15.7rem;
         height: 10rem;
+        grid-column: 2/4;
     }
     .left-r >:nth-child(3)
     {
@@ -119,6 +120,7 @@
     .left-r >:nth-child(4)
     {
         width: 7rem;
-        height: 6rem;
+        height: 5.6rem;
+        grid-column: 3/8;
     }
 }
